@@ -1,5 +1,5 @@
 import exceptions.WrongLoginException;
-import exceptions.exceptions.WrongPasswordException;
+import exceptions.WrongPasswordException;
 
 public class Main {
 

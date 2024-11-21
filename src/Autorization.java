@@ -1,5 +1,5 @@
 import exceptions.WrongLoginException;
-import exceptions.exceptions.WrongPasswordException;
+import exceptions.WrongPasswordException;
 
 public class Autorization {
 
@@ -12,7 +12,7 @@ public class Autorization {
 
     public static void checkLogin(String login) {
 
-        if (login.length() <= 20 & login.matches("^[a-zA-Z0-9_]*$")) {
+        if (login.length() <= 20 && login.matches("^[a-zA-Z0-9_]*$")) {
             System.out.println("Логин удовлетворяет заданным требованиям");
         } else {
             throw new WrongLoginException();
@@ -22,7 +22,7 @@ public class Autorization {
 
     public static void checkPassword(String password, String confirmPassword) {
 
-        if (password.equals(confirmPassword) & password.length() <= 20 & password.matches("^[a-zA-Z0-9_]*$")) {
+        if (password.equals(confirmPassword) && password.length() <= 20 & password.matches("^[a-zA-Z0-9_]*$")) {
             System.out.println("Пароль удовлетворяет заданным требованиям");
         } else {
             throw new WrongPasswordException();
